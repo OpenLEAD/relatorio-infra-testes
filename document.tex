@@ -1,0 +1,52 @@
+%-----------------------------------------------------------------------
+%
+%   UFRJ  - Universidade Federal do Rio de Janeiro
+%   COPPE - Coordenação dos Programas de Pós-graduação em Engenharia
+%   PEE   - Programa de Engenharia Elétrica
+%
+%
+%   Projeto EMMA - 
+%
+%                                                        19/out/15, Rio
+%                                                        Estevão F. Ferrão
+%----------------------------------------------------------------------
+%
+%  Compilar usando PDFLaTeX
+%
+%----------------------------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+\usepackage{macros/ROSApackages}
+\usepackage[brazilian]{babel}
+
+\input{macros/ROSAsettings}
+\input{macros/ROSAmacros}
+
+%\def\PATH{file:c:/Users/Ramon/My Documents/projetos/2015/Projeto EMMA}
+\begin{document}
+\include{00_Frontpage}
+
+
+\section{Objetivo}
+Esse documento tem como objetivo descrever os requisitos mínimos para a
+realização dos testes finais para a análise de viabilidade técnica para o
+processo de metalização de turbinas \textit{in situ}, como parte final do
+projeto EMMA.
+Serão descritos os critérios mínimos que os testes devem cobrir e avaliar, assim
+como possíveis cenários de teste e o espaço e a infraestrutura
+disponíveis e necessários para a realização dos mesmos.
+
+\section{Critérios}
+\label{sec::criterios}
+\input{criterios}
+
+\section{Espaço disponível}
+\input{espaco}
+
+\section{Infraestrutura}
+\input{infra}
+
+\section{Testes}
+\input{testes}
+
+
+\end{document}

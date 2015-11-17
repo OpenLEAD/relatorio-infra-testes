@@ -1,0 +1,68 @@
+%-----------------------------------------------------------------------
+%
+%   UFRJ  - Universidade Federal do Rio de Janeiro
+%   COPPE - Coordenação dos Programas de Pós-graduação em Engenharia
+%   PEE   - Programa de Engenharia Elétrica
+%
+%
+%   Projeto ROSA - Robô para operação de stoplogs alagados
+%
+%   Macros
+%                                                         Ramon R. Costa
+%                                                         20/mar/14, Rio
+%-----------------------------------------------------------------------
+\newfont{\grande}{cmss10 scaled 1500}
+\newfont{\Grande}{cmss10 scaled 2500}
+\newfont{\GRANDE}{cmss10 scaled 3500}
+\newfont{\enorme}{cmdunh10 scaled 6000}
+
+\newcommand{\BLU}[1]{\colorbox{white}{\textcolor{blue}{#1}}}
+\newcommand{\HI}[1]{\colorbox{yellow}{\textcolor{black}{#1}}}  %% Highlithed text
+
+\def\ROSA{\BLU{\textsc{ROSA}}\xspace}
+\def\PATH{file:c:/Users/Ramon/My Documents/projetos/2013/Projeto ROSA}
+
+\newcommand{\block}[2]{
+  \def\TXT{~#1~}
+  \noindent\TXT \hfill
+  \parbox[t]{ \textwidth - \widthof{\TXT} - 2mm}{#2} \\
+}
+
+\newcommand{\participantes}[1]{
+  \block{\textbf{Participantes}:}{#1}
+  \medskip%
+}
+
+\newcommand{\pauta}[1]{
+  \block{\textbf{Pauta}:}{#1}
+  \medskip%
+}
+
+\newcommand{\dado}[2]{
+  \noindent%
+  \makebox[30mm][l]{\large\sf#1 {\small\dotfill}} :
+  \hfill\parbox[t]{140mm}{#2} %\\[2mm]
+  \par
+  \vspace*{0.30mm}
+}
+
+\newcommand{\vu}[2]{ %Utilização: \vu{valor}{unidade}
+  \textcolor{darkblue}{#1$\,#2$}\xspace
+}
+
+\def\alana{Alana Monteiro\xspace}
+\def\antonio{Antônio\xspace}
+\def\jacoud{Alessandro Jacoud\xspace}
+\def\andre{André Figueiró\xspace}
+\def\breno{Breno Bellinati de Carvalho\xspace}
+\def\elael{Eduardo Elael\xspace}
+\def\gabriel{Gabriel Alcântara\xspace}
+\def\gizele{Gizele Ferreira da Silva\xspace}
+\def\julia{Júlia Campana\xspace}
+\def\patrick{Patrick Paranhos\xspace}
+\def\rafael{Rafael Oliveira\xspace}
+\def\ramonC{Ramon Campos\xspace}
+\def\ramon{Ramon Romankevicius\xspace}
+\def\renan{Renan Freitas\xspace}
+\def\sylvain{Sylvain Joyeux\xspace}
+

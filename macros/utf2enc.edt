@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------
+//  Macro para substituir todos os códigos de acentuação LaTeX
+//  por letras acentuadas (códigos estendidos).
+//
+//  Para o documento ser compilado corretamente, incluir
+//  no preâmbulo a seguinte instrução:
+//
+//  \usepackage[latin1]{inputenc}
+//                                                          Ramon R. Costa
+//                                                          29/jul/01, Rio
+// -----------------------------------------------------------------------
+
+ //Requires(20001115); // Specifies the build number of your version of WinEdt. (About Dialog)
+
+ SetSearchForward(1);
+ SetSearchCaseSensitive(1);
+ SetSearchEntire(0);
+ SetSearchCyclic(1);
+ SetSearchRelaxed(0);
+ SetSearchWholeWords(0);
+ SetSearchInline(0);
+ SetSearchCurrentDoc;
+ SetRegEx(0);
+ SetReplaceRespectCaps(1);
+ SetReplacePrompt(0);
+ SearchReset;
+
+ SetReplaceNotify(0);    //  Turn off the notification message on how many instances
+                         //  of the string has been replace
+ SetNotFoundNotify(0);   //  Turn off the notification message if the string was not found
+
+ SetFindCenterLine(1);   // Vertically center lines with Found string on the screen.
+
+ SetTracking(0);         // Turn off Screen Refreshing
+
+ Mark(0);   // Store the Position inside the current document in the Scope Register 0
+
+ // [1]
+ SetReplaceStr("á");    SetFindStr("Ã¡");       ReplaceAll;
+ SetReplaceStr("é");    SetFindStr("Ã©");       ReplaceAll;
+ SetReplaceStr("í");    SetFindStr("Ã­");       ReplaceAll;
+ SetReplaceStr("ó");    SetFindStr("Ã³");       ReplaceAll;
+ SetReplaceStr("ú");    SetFindStr("Ãº");       ReplaceAll;
+
+ SetReplaceStr("Á");    SetFindStr("\'{A}");       ReplaceAll;
+ SetReplaceStr("É");    SetFindStr("Ã‰");       ReplaceAll;
+ SetReplaceStr("Í");    SetFindStr("\'{I}");       ReplaceAll;
+ SetReplaceStr("Ó");    SetFindStr("\'{O}");       ReplaceAll;
+ SetReplaceStr("Ú");    SetFindStr("\'{U}");       ReplaceAll;
+
+ // [2]
+ SetReplaceStr("â");    SetFindStr("Ã¢");       ReplaceAll;
+ SetReplaceStr("ê");    SetFindStr("Ãª");       ReplaceAll;
+ SetReplaceStr("ô");    SetFindStr("Ã´");       ReplaceAll;
+
+ SetReplaceStr("Â");     SetFindStr("\^{A}");      ReplaceAll;
+ SetReplaceStr("Ê");    SetFindStr("\^{E}");       ReplaceAll;
+ SetReplaceStr("Ô");    SetFindStr("\^{O}");       ReplaceAll;
+
+ // [3]
+ SetReplaceStr("à");    SetFindStr("Ã ");       ReplaceAll;
+
+ SetReplaceStr("À");    SetFindStr("\`{A}");       ReplaceAll;
+
+ // [4]
+ SetReplaceStr("ü");    SetFindStr('\"{u}');       ReplaceAll;
+
+ SetReplaceStr("Ü");    SetFindStr('\"{U}');       ReplaceAll;
+
+ // [5]
+ SetReplaceStr("ção");  SetFindStr("Ã§Ã£o");    ReplaceAll;
+
+ SetReplaceStr("ÇÃO");  SetFindStr("\c{C}\~{A}O");    ReplaceAll;
+
+ SetReplaceStr("ções"); SetFindStr("Ã§Ãµes");   ReplaceAll;
+
+ SetReplaceStr("ÇÕES"); SetFindStr("\c{C}\~{O}ES");   ReplaceAll;
+
+ // [6]
+ SetReplaceStr("ã");    SetFindStr("Ã£");       ReplaceAll;
+ SetReplaceStr("õ");    SetFindStr("Ãµ");       ReplaceAll;
+
+ SetReplaceStr("Ã");    SetFindStr("\~{A}");       ReplaceAll;
+ SetReplaceStr("Õ");    SetFindStr("\~{O}");       ReplaceAll;
+
+ // [7]
+ SetReplaceStr("ç");    SetFindStr("Ã§");       ReplaceAll;
+
+ SetReplaceStr("Ç");     SetFindStr("\c{C}");      ReplaceAll;
+
+ SetReplaceStr("'");     SetFindStr("â€™");      ReplaceAll;
+ SetReplaceStr("'");     SetFindStr("â€˜");      ReplaceAll;
+
+ // [8]
+ SetReplaceStr("-");    SetFindStr("â€“");       ReplaceAll;
+
+ // Terminando...
+
+ Goto(0);          // Restore the position specified through the Mark command.
+
+ SetTracking(1);   // Turn on Screen Refreshing
+ RefreshScreen;
+
+// -----------------------------------------------------------------------

@@ -1,0 +1,116 @@
+%----------------------------------------------------------------------
+%
+%   Macros utilizados no LATEX.
+%                                                       Ramon R. Costa
+%                                                       23/jun/94, Rio
+%----------------------------------------------------------------------
+\newcount\m
+\newcount\n
+
+\def\twodigits#1{\ifnum #1<10 0\fi \number#1}
+
+\def\hours{\n=\time \divide\n 60
+  \m=-\n \multiply\m 60 \advance\m \time
+  \twodigits\n:\twodigits\m}
+
+\def\hora{\hours}
+
+\def\data{Rio de Janeiro,\  \number\day\  de \ifcase\month\or
+  janeiro\or
+  fevereiro\or
+  mar\c{c}o\or
+  abril\or
+  maio\or
+  junho\or
+  julho\or
+  agosto\or
+  setembro\or
+  outubro\or
+  novembro\or
+  dezembro\or\fi\  de \number\year
+}
+
+%----------------------------------------------------------------------
+\def\pee{Programa de Engenharia Elétrica\xspace}
+\def\PEE{PROGRAMA DE ENGENHARIA ELÉTRICA\xspace}
+
+\def\coppe{Coordenação dos Programas de Pós--Graduação em Engenharia\xspace}
+\def\COPPE{COORDENAÇÃO DOS PROGRAMAS DE PÓS--GRADUAÇÃO EM ENGENHARIA\xspace}
+
+\def\ct{Centro de Tecnologia\xspace}
+\def\CT{CENTRO DE TECNOLOGIA\xspace}
+
+\def\ufrj{Universidade Federal do Rio de Janeiro\xspace}
+\def\UFRJ{UNIVERSIDADE FEDERAL DO RIO DE JANEIRO\xspace}
+
+\def\rrc{Ramon Romankevicius Costa\xspace}
+\def\RRC{RAMON ROMANKEVICIUS COSTA\xspace}
+
+\def\gscar{Gru\-po de Si\-mu\-la\-ção e Con\-tro\-le em Auto\-ma\-ção e Ro\-bó\-ti\-ca\xspace}
+\def\GSCAR{GRUPO DE SIMULAÇÃO E CONTROLE EM AUTOMAÇÃO e ROBÓTICA\xspace}
+
+%----------------------------------------------------------------------
+\newcommand{\coordenador}{
+  \vspace{1.5cm}
+  \hspace{7cm}
+  \parbox{7cm}{
+    \centering
+    \rule[0mm]{70mm}{0.1mm} \\
+    \rrc \\[3mm]
+    Coordenador do Projeto \\
+  }
+}
+
+\def\assinaturadocoordenador{
+  \vspace{10mm}%
+  \parbox[t]{70mm}{
+    Aprovado por: \\[5mm]
+    \centering
+    \includegraphics[width=65mm]{../assinatura/assinatura-digital.jpg} \\[-4mm]
+    \rule[2mm]{70mm}{0.1mm} \\
+    \rrc \\[3mm]
+    Coordenador do Projeto \\
+  }
+}
+
+\newcommand{\footnotecomendereco}{
+  \vfill
+  \noindent\rule[0mm]{\textwidth}{0.1mm}
+  {\scriptsize \sf
+  \begin{minipage}{1.5cm}
+    Endereço :
+  \end{minipage}
+  \begin{minipage}[t]{8.5cm}
+    \rrc \\
+    COPPE/UFRJ --- \pee \\
+    Caixa Postal 68504 --- CEP 21941-972 \\
+    Rio de Janeiro, RJ, Brasil
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{4cm}
+    \begin{tabbing}
+      e-mail\ \= : {\tt ramon@coep.ufrj.br} \\
+      Lab.    \> : (21) 3938-8604 \\
+      Cel.    \> : (21) 98887-9355
+    \end{tabbing}
+  \end{minipage}
+  }
+}
+
+\newcommand{\remetente}{
+  \vspace{3cm}
+  \parbox{15cm}{
+    \rrc \\
+    COPPE/UFRJ --- \pee \\
+    Caixa Postal 68.504 --- CEP 21.945--970 --- Rio de Janeiro --- RJ
+  }
+}
+
+\newcommand{\fim}{
+  \medskip
+  \begin{center}
+  \rule[1mm]{30mm}{0.14mm}$\diamond$\rule[1mm]{30mm}{0.14mm}
+  \end{center}
+}
+
+%----------------------------------------------------------------------

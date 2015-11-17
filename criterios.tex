@@ -1,0 +1,42 @@
+\subsection{Cobertura da pá}
+Um dos principais requisitos é a capacidade do sistema de posicionar
+corretamente o efetuador em toda a superfície da pá utilizando o manipulador
+escolhido (Motoman MH12) e o sistema mecânico composto por trilho e base,
+garantindo assim uma total cobertura da superfície a ser revestida.
+Caso contrário, o processo de metalização não pode ser finalizado
+utilizando a solução proposta como único método de
+revestimento. Portanto, um dos critérios a ser analisado é o alcance do
+manipulador em todos os pontos ou pontos chave previamente selecionados,
+obedecendo a restrição de um ângulo de até $30^o$  em
+relação à superfície da pá e uma distância entre $0.23m$ e $0.24m$, até a ponta
+da pistola de metalização (ou peça representando a mesma).
+
+\subsection{Payload e vibrações}
+O processo de metalização utiliza, atualmente, uma pistola com peso aproximado
+de $8,5kg$ e necessita de cabeamento até o sistema auxiliar externo.
+Para assegurar a qualidade final do revestimento, o processo tem como requisito
+uma velocidade constante de $40m/min$ durante o jateamento. 
+Portanto, o sistema base e manipulador deverá ser capaz de realizar uma
+trajetória pré-estabelecida com um payload de $8,5kg$, na velocidade
+especificada, e sofrendo a ação de um empuxo no sentido contrário à ponta do efetuador.
+
+\subsection{Calibração}
+A posição relativa entre o manipulador e ao modelo em escala 1:1 da pá deve ser
+calculada a partir da nuvem de pontos gerada pelo sensor Faro Focus X330. 
+O sistema de calibração também deve ser capaz de identificar e posicionar as pás
+do modelo em escala 5:1 em diversas posições do rotor e ângulo de ataque das
+pás.
+
+\subsection{Estrutura mecânica}
+Deverão ser verificadas a capacidade de montagem da estrutura mecânica, a
+robustez do sistema e seu nível de vibrações, quando aplicados as forças
+e torques máximos especificados no \textit{datasheet} do manipulador MH12.
+A capacidade de posicionamento da base do robô, assim como o pivoteamento entre
+o trilho primário e secundário.
+
+\subsection{Shutter}
+
+A capacidade de desvio do fluxo de particulado, antes da queima, deve ser
+avaliado, assim como as alterações na pressão no sistema de alimentação.
+
+

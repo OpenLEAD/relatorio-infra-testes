@@ -1,0 +1,59 @@
+Essa seção apresentará propostas de testes afim de contemplar os critérios
+apresentados na seção \ref{sec::criterios}
+
+\subsection{Teste da base}
+Devido ao espaço limitado e as configurações
+possíveis de fixação, foi analisado que uma possiblidade de testes é avaliar a rigidez estrutural do trilho secundário, 
+considerando uma única posição de fixação e sem a necessidade da presença de bases magnéticas. 
+O teste contemplaria apenas a rigidez entre o ponto de pivoteamento e o trilho secundário e entre o 
+trilho secundário e a base do robô. Assim como a necessidade e possibilidade de uma fixação da base do 
+robô diretamente a superfície de apoio.
+
+\subsection{Teste de cobertura da pá}
+
+Visto que uma infraestrura de pintura não apresentou um custo benefício
+interessante, outros métodos devem ser propostos.
+
+\begin{itemize}
+  \item \textbf{Toque em pontos específicos:} para avaliar a cobertura, seria
+  possível um cenário de testes no qual, com o auxílio de um efetuador, o
+  manipulador realizaria toques nas partes extremas da pá. A cobertura total
+  seria assumida a partir da hipótese que os pontos amostrados são  pontos
+  críticos e suficientes.
+  \item  \textbf{Pintura com caneta:} afim de garantir o apelo visual para o
+  cliente, seria possível realizar um cenário no qual o manipulador realizaria a
+  pintura da pá com a ajuda de uma caneta e um efetuador com um sistema de molas
+  para garantir uma tolerância em relação à distância da pá. A caneta teria uma
+  espessura mais próxima à área útil de metalização da chama, oferecendo uma
+  medida mais realista da cobertura da pá se comparada a um sistema de
+  pintura.
+  \item \textbf{Pintura por \textit{light painting}:} seguindo o mesmo
+  raciocínio da pintura com caneta, o robô realizaria uma pintura virtual da pá,
+  utilizando um laser e uma câmera para sobrepor toda a trajetória. Esse cenário
+  retira a complexidade mecânica e o risco de danificação tanto da pá, quanto da
+  caneta, porém adiciona complexidade de implementação e integração do sistema.
+\end{itemize}
+
+\subsection{Teste de Calibração}
+
+A partir da infraestrutura proposta, os cenários de testes da calibração seriam
+a calibração em escala 1:1 com a pá em posição fixa e o manipulador sendo
+movimentado. A calibração pode ser realizada com o sensor sendo posicionado de
+maneiras diferentes, com a presença ou não de oclusão. Para a identificação do
+cone e diversos posicionamentos da pá, é possível a utlização da maquete 5:1.
+
+\subsection{Payload e vibrações}
+
+Para os testes de payload e vibrações é prosposto a utilização de um lastro
+simulando o peso da pistola e um compressor de ar para simuluar o empuxo gerado
+pelo processo. Esse compressor pode ser simples e o laboratório já possui um de
+dimensões que não atrapalhariam a configuração proposta. É preciso apenas uma
+especificação correta das forças geradas pelo processo para o dimensionamento da
+vazão de ar necessária e verificação da conformidade do atual compressor.
+
+\section{Shutter}
+
+O estudo do Shutter ainda está em aberto e necessita de mais discussões com a
+empresa parceia Rijeza. É possível que os testes desse dispositivos sejam
+realizados nas instalações da Rijeza no sul do páis ou na própria usina de
+Jirau.
