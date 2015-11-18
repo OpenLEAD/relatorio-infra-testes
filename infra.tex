@@ -78,8 +78,17 @@ antes de simular o coating da pá. Esse cenário não é o ideal, uma vez que at
 
 \subsection{Demanda Elétrica}
 
-DX200 - 3-phase, 240/480/575 VAC at 50/60 Hz
-MH12 -	1.5 kVA
+O ambiente de testes deve ser dimensionado para suportar uma demanda, além da
+consumida pela iluminação e o uso de aproximademente 4 computadores, de 1.5 kVA
+relacionada ao controlador DX200 e o manipulador MH12. 
+Esses dispositivos operam em sistema trifásico, suportando 240/480/575 V a 50/60. 
+O compressor de arincluíria %TODO potencia do compressor
+na demanda total.
+Todos os elementos devem ser considerados como de uso
+simultâneo. 
+
+A viabilidade de um sistema de resfriação ou ventilação não foi citado pois
+depende das características estruturais do projeto. 
 
 \subsection{Base do manipulador MH12}
 O manipulador deve possuir uma base padrão instalada no ambiente de testes, para
@@ -119,7 +128,12 @@ o computador em pé.
  da pá de dentro do ambiente para manobra.
  
  \subsection{Fluxo de equipamentos}
-- Dimensões dos equipamentos que etram e saem (dimensionamento da porta);
+ Excluindo-se a instalação da pá discutida na seção \ref{sec::instal_pa}, apenas
+o manipulador MH12 e seu controlador representam objetos de dimensões
+significativas que deverão passar pela porta de acesso do galpão de testes.
+As dimensões do manipulador são e do controlador DX200 são 800(l)   x  650(p) 
+x1000(a). 
+
 
 \subsection{Instalação da Pá}\label{sec::instal_pa}
 
