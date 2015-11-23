@@ -1,13 +1,15 @@
 Essa seção apresentará propostas de testes afim de contemplar os critérios
 apresentados na seção \ref{sec::criterios}
 
-\subsection{Teste da base}
+\subsection{Teste da base mecânica}
 Devido ao espaço limitado e as configurações
 possíveis de fixação, foi analisado que uma possiblidade de testes é avaliar a rigidez estrutural do trilho secundário, 
 considerando uma única posição de fixação e sem a necessidade da presença de bases magnéticas. 
 O teste contemplaria apenas a rigidez entre o ponto de pivoteamento e o trilho secundário e entre o 
 trilho secundário e a base do robô. Assim como a necessidade e possibilidade de uma fixação da base do 
 robô diretamente a superfície de apoio.
+
+
 
 \subsection{Teste de cobertura da pá}
 
@@ -57,3 +59,19 @@ O estudo do Shutter ainda está em aberto e necessita de mais discussões com a
 empresa parceia Rijeza. É possível que os testes desse dispositivos sejam
 realizados nas instalações da Rijeza no sul do páis ou na própria usina de
 Jirau.
+
+\subsection{Teste da Base Magnética}
+ 
+ Se selecionada a opção $2$ descrita na seção~\ref{sec::fix_base}, como
+ requisito de segurança deve-se testar previamente a capacidade da base
+ magnética na estrutura metálica instalada.
+ O objetivo do teste é garantir que não haverá desacoplamento da base magnética
+ em relação à placa durante os testes dinâmicos do robô.
+ 
+ Para o teste será necessária a utilização de talha manual ou elétrica, com
+ capacidade superior à capacidade máxima da base magnética, e uma balança
+ suspensa, com o mesmo requisito de capacidade, que medirá a carga máxima
+ trativa admissível do imã. 
+ Para os esforços tangenciais, calcula-se a força máxima de atrito estático da
+ interface, sendo este um resultado conservador para especificar a carga máxima
+ tangencial admissível da base magnética.
